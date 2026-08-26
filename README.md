@@ -1,9 +1,7 @@
-# آموزش نصب و راه اندازی Hysteria2 با پنل گرافیکی مدیریت کاربران
-
+# آموزش Claude Code و Codex رایگان! بدون خرید اکانت Pro
 > [!TIP]
 > ###### لینک ویدیو یوتیوب
 ```
-https://www.youtube.com/watch?v=VxvGU4F4k74
 ```
 
 
@@ -35,32 +33,37 @@ https://dashboard.azaronline.com/order/?aff=790&p=domain
 
 
 
-#### آپدیت و آپگرید سرور
+##### ست کردن API توی توی PowerShell
 ```
-apt-get update -y && apt-get upgrade -y
-```
-#### نصب Curl 
-```
-apt install -y curl socat
-```
-
-#### نصب اسکریپت Hysteria 2
-```
-bash <(curl -fsSL https://raw.githubusercontent.com/jonssonyan/h-ui/main/install.sh)
+[System.Environment]::SetEnvironmentVariable(
+  "AGENT_ROUTER_TOKEN",
+  "sk-اینجا-توکن-خودت",
+  "User"
+)
 ```
 
-
-
-###### درصورتیکه مشکل داشتید از گوگل ترنسلیت برای ترجمه متون استفاده کنید.
-###### درنهایت پس از پایان مراحل نصب اطلاعات کانفیگ رو توی یه فایل ذخیره کنید و ایمپورت کنید.
-
-###### مخزن Hysteria 2
+##### چک کردن API برای اطمینان از ثبت شدنش
 ```
-https://hysteria.network/
+$env:AGENT_ROUTER_TOKEN
 ```
 
-###### V2ray Software
+##### باز کردن فایل کانفیگ کدکس
 ```
-https://github.com/2dust/v2rayN/releases
+notepad "$HOME\.codex\config.toml"
 ```
+
+##### تنظیمات کانفیگ کدکس
+```
+model_provider = "agentrouter"
+
+
+[model_providers.agentrouter]
+name = "AgentRouter"
+base_url = "https://agentrouter.org/v1"
+env_key = "AGENT_ROUTER_TOKEN"
+wire_api = "responses"
+requires_openai_auth = false
+supports_websockets = false
+```
+
 
