@@ -2,6 +2,7 @@
 > [!TIP]
 > ###### لینک ویدیو یوتیوب
 ```
+https://youtu.be/RwTEyvmp_lw
 ```
 
 
@@ -34,7 +35,7 @@ https://dashboard.azaronline.com/order/?aff=790&p=domain
 
 
 
-#### آدرس سایت agentrouter:
+#### آدرس سایت AgentRouter:
 ```
 https://agentrouter.org/register?aff=6LtF
 ```
