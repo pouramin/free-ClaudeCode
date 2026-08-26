@@ -33,6 +33,11 @@ https://dashboard.azaronline.com/order/?aff=790&p=domain
 
 
 
+
+#### آدرس سایت agentrouter:
+```
+https://agentrouter.org/register?aff=6LtF
+```
 ##### ست کردن API توی توی PowerShell
 ```
 [System.Environment]::SetEnvironmentVariable(
