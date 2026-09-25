@@ -35,22 +35,25 @@ https://dashboard.azaronline.com/order/?aff=790&p=domain
 
 
 
-#### آدرس سایت AgentRouter:
+#### آدرس سایت aerolink:
 ```
-https://agentrouter.org/register?aff=6LtF
+https://tinyurl.com/yjtbsr7m
 ```
-##### ست کردن API توی توی PowerShell
+
+
+##### ست کردن API توی توی PowerShell برای aerolink
 ```
 [System.Environment]::SetEnvironmentVariable(
-  "AGENT_ROUTER_TOKEN",
+  "aerolink_TOKEN",
   "sk-اینجا-توکن-خودت",
   "User"
 )
 ```
 
+
 ##### چک کردن API برای اطمینان از ثبت شدنش
 ```
-$env:AGENT_ROUTER_TOKEN
+$env:aerolink_TOKEN
 ```
 
 ##### باز کردن فایل کانفیگ کدکس
@@ -58,18 +61,18 @@ $env:AGENT_ROUTER_TOKEN
 notepad "$HOME\.codex\config.toml"
 ```
 
-##### تنظیمات کانفیگ کدکس
+
+
+##### تنظیمات کانفیگ کدکس برای aerolink
 ```
-model_provider = "agentrouter"
+model_provider = "aerolink"
+model = "gpt-5.6-sol"
 
-
-[model_providers.agentrouter]
-name = "AgentRouter"
-base_url = "https://agentrouter.org/v1"
-env_key = "AGENT_ROUTER_TOKEN"
+[model_providers.aerolink]
+name = "aerolink"
+base_url = "[https://agentrouter.org/v1](https://cgapi.aerolink.lat/v1)"
+env_key = "aerolink_TOKEN"
 wire_api = "responses"
 requires_openai_auth = false
 supports_websockets = false
 ```
-
-
