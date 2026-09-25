@@ -70,7 +70,7 @@ model = "gpt-5.6-sol"
 
 [model_providers.aerolink]
 name = "aerolink"
-base_url = "[https://agentrouter.org/v1](https://cgapi.aerolink.lat/v1)"
+base_url = "https://cgapi.aerolink.lat/v1"
 env_key = "aerolink_TOKEN"
 wire_api = "responses"
 requires_openai_auth = false
