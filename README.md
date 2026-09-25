@@ -37,7 +37,7 @@ https://dashboard.azaronline.com/order/?aff=790&p=domain
 
 #### آدرس سایت aerolink:
 ```
-https://tinyurl.com/yjtbsr7m
+https://go.pouramin.dev/aerolink
 ```
 
 
